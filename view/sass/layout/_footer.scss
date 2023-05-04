@@ -1,0 +1,45 @@
+footer {
+  text-align: center;
+  .footer {
+    margin-top: 75px;
+    text-align: center;
+    @include tablet {
+      margin-left: 400px;
+    }
+    @include desktop {
+      margin-left: 450px;
+    }
+    .inFooter {
+      width: 90%;
+      margin: auto;
+      .topFooter {
+        display: flex;
+        justify-content: center;
+        @include desktop {
+          margin: auto;
+        }
+        .inTop {
+          a {
+            text-decoration: none;
+            color: $gray;
+            padding: 7px;
+            @include desktop {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+    .txtCopy {
+      color: $gray;
+      padding: 10px;
+      p {
+        padding: 0;
+        margin: 10px;
+      }
+    }
+  }
+  .fa-regular {
+    font-size: 12px;
+  }
+}
